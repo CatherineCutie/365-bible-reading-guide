@@ -268,7 +268,7 @@ const Book = () => {
 																<></>
 															) : (
 																<>
-																	{query5.data.content.map((data) => (
+																	{query5.data?.content.map((data) => (
 																		<Fragment key={data.id}>
 																			{data.hasOwnProperty("items") ? (
 																				<p className="mb-5 text-justify">
